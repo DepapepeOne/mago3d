@@ -9,7 +9,7 @@ buildscript {
 		mavenCentral()
 	}
 	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+		//classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
 	}
 }
 
@@ -100,7 +100,9 @@ dependencies {
 	//compile 'io.springfox:springfox-swagger-ui:2.7.0'
 		
 	compileOnly('org.projectlombok:lombok')
-	
+	annotationProcessor('org.projectlombok:lombok')
+	//implementation('org.projectlombok:lombok')
+
 	runtime('org.springframework.boot:spring-boot-devtools')
 	runtime('org.postgresql:postgresql')
 	
